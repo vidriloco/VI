@@ -1,0 +1,38 @@
+.listing {
+	padding-bottom: 100px !important;
+}
+
+.action-button:hover {
+	text-decoration: none;
+}
+
+.action-button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#3bbedb 0%,
+		#3b7cec);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#3bbedb),
+		to(#3b7cec));
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 0px solid #ffffff;
+	-moz-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.2),
+		inset 0px 0px 1px rgba(059,124,236,1);
+	-webkit-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.2),
+		inset 0px 0px 1px rgba(059,124,236,1);
+	box-shadow:
+		0px 3px 11px rgba(000,000,000,0.2),
+		inset 0px 0px 1px rgba(059,124,236,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0),
+		0px 1px 0px rgba(255,255,255,0.3);
+}

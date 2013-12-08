@@ -1,0 +1,19 @@
+<%= element_view_for(element) do |el| -%>
+	<ul>
+		<li><%= link_to el.render(:first_item_text), el.render(:first_item_url) %></li>
+		<li class="text"><%= link_to el.render(:second_item_text), el.render(:second_item_url) %></li>
+		
+		<% unless el.render(:linked_in).blank? %>
+			<li><%= link_to image_tag('linked_in.png'), el.render(:linked_in), :target => "_blank" %></li>
+		<% end %>
+		<% unless el.render(:facebook).blank? %>
+			<li><%= link_to image_tag('facebook.png'), el.render(:facebook), :target => "_blank" %></li>
+		<% end %>
+		<% unless el.render(:twitter).blank? %>
+			<li><%= link_to image_tag('twitter.png'), el.render(:twitter), :target => "_blank" %></li>
+		<% end %>
+		<% unless el.render(:email).blank? %>
+			<li><%= link_to image_tag('email.png'), el.render(:email) %></li>
+		<% end %>
+	</ul>
+<%- end -%>

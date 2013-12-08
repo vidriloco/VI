@@ -1,0 +1,21 @@
+<%= render 'shared/navbar' %>
+
+<div id="slides-container">
+	<% @slide = 0 %>
+	<%= render_elements only: 'slide_image' %>
+</div>
+
+<div id="slides-indicators">
+	<ul>
+		<li id="prev-control"><%= link_to image_tag('prev_icon.png'), 'javascript:void(0);', :class => 'prev-icon' %></li>
+		<li id="circle"><%= link_to '', 'javascript:void(0);', :class => 'circle gray-circle' %></li>
+		<li id="next-control"><%= link_to image_tag('next_icon.png'), 'javascript:void(0);', :class => 'next-icon' %></li>
+	</ul>
+</div>
+
+<%= render_elements only: 'infographic' %>
+<%= render_elements only: 'open_call' %>
+<%= render_elements only: 'location' %>
+
+<div id="map"></div>
+<%= render 'shared/footer' %>

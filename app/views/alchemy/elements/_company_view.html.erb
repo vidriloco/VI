@@ -1,0 +1,17 @@
+<%= element_view_for(element) do |el| -%>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-lg-6 col-md-8">
+			<div class="info">
+				<div class="contact">
+			  	<p><%= link_to image_tag('twitter.png'), el.render(:twitter), :target => "_blank" %></p>
+			  	<p><%= link_to image_tag('facebook.png'), el.render(:facebook), :target => "_blank" %></p>
+					<p><a href="mailto:<%= el.render(:email) %>"><%= image_tag('email.png') %></a></p>
+			  	<p><%= link_to image_tag('web.png'), complete_url(el.render(:webpage)), :target => "_blank" %></p>
+			  </div>
+				<div class="pic"><%= el.render :image, :image_size => '200x200' %></div>
+				<h4><%= el.render :name %></h4>
+			</div>
+		</div>
+	  <div class="col-xs-12 col-sm-12 col-lg-6 col-md-4 details"><%= el.render :description %></div>
+	</div>
+<%- end -%>

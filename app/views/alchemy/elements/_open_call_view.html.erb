@@ -1,0 +1,13 @@
+<%= element_view_for(element, :id => 'open-call') do |el| -%>
+  <p class="title" style="color: <%= el.render :title_color %>"><%= el.render :title %></p>
+	<div class="hidden"><%= el.render :image %></div>
+	
+  <div class="content">
+    <span style="color: <%= el.render :details_color %>"><%= el.render :details %></span>
+		<br/>
+		<% if el.render(:button_visible).eql?("true") %>
+			<br/>
+			<%= link_to el.render(:button_content), el.render(:button_link) , :class => 'action-button', :target => "_blank" %>
+		<% end %>
+  </div>
+<%- end -%>

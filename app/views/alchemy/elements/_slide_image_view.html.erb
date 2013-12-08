@@ -1,0 +1,11 @@
+<%= element_view_for(element, :id => @slide) do |el| -%>
+	<%= el.render :image, :class => "image" %>
+	<div class="inner-item">
+		<p style="color: <%= el.render :content_color %>"><%= el.render :details %></p>
+		<% if el.render(:button_visible).eql?("true") %>
+			<br/>
+			<%= link_to el.render(:button_content), el.render(:button_link) , :class => 'action-button', :target => "_blank" %>
+		<% end %>
+	</div>
+<%- end -%>
+<% @slide+=1 %>

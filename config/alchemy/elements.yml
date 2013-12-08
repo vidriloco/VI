@@ -1,0 +1,127 @@
+# == In this configuration you setup Alchemy´s element layouts.
+#
+# For further informations please see http://guides.alchemy-cms.com/create_elements.html
+- name: slide_image
+  contents:
+  - name: details
+    type: EssenceText
+    validate:
+    - presence
+  - name: image
+    type: EssencePicture
+  - name: button_visible
+    type: EssenceBoolean
+  - name: button_link
+    type: EssenceText
+  - name: button_content
+    type: EssenceText
+  - name: content_color
+    type: EssenceText
+- name: infographic
+  contents:
+  - name: content
+    type: EssenceText
+  - name: content_color
+    type: EssenceText
+  - name: content_margin_top
+    type: EssenceText
+  - name: content_floating_in
+    type: EssenceText
+  - name: button_link
+    type: EssenceText
+  - name: button_content
+    type: EssenceText
+  - name: button_visible
+    type: EssenceBoolean
+  - name: image
+    type: EssencePicture
+- name: open_call
+  contents:
+  - name: title
+    type: EssenceText
+  - name: details
+    type: EssenceText
+  - name: title_color
+    type: EssenceText
+  - name: details_color
+    type: EssenceText
+  - name: button_visible
+    type: EssenceBoolean
+  - name: button_link
+    type: EssenceText
+  - name: button_content
+    type: EssenceText
+  - name: image
+    type: EssencePicture
+- name: location
+  contents:
+  - name: latitude
+    type: EssenceText
+  - name: longitude
+    type: EssenceText
+- name: navbar
+  contents:
+  - name: twitter
+    type: EssenceText
+  - name: facebook
+    type: EssenceText
+  - name: linked_in
+    type: EssenceText
+  - name: email
+    type: EssenceText
+  - name: first_item_text
+    type: EssenceText
+  - name: first_item_url
+    type: EssenceText
+  - name: second_item_text
+    type: EssenceText
+  - name: second_item_url
+    type: EssenceText
+- name: contact
+  contents:
+  - name: address
+    type: EssenceText
+  - name: phone
+    type: EssenceText
+- name: company
+  contents:
+  - name: name
+    type: EssenceText
+    validate:
+    - presence
+  - name: description
+    type: EssenceRichtext
+    validate:
+    - presence
+  - name: facebook
+    type: EssenceText
+  - name: email
+    type: EssenceText
+  - name: webpage
+    type: EssenceText
+  - name: twitter
+    type: EssenceText
+  - name: image
+    type: EssencePicture
+    validate:
+    - presence
+- name: person
+  contents:
+  - name: name
+    type: EssenceText
+    validate:
+    - presence
+  - name: occupation
+    type: EssenceSelect
+    validate:
+    - presence
+  - name: linked_in
+    type: EssenceText
+  - name: twitter
+    type: EssenceText
+  - name: description
+    type: EssenceRichtext
+  - name: image
+    type: EssencePicture
+    validate:
+    - presence

@@ -1,0 +1,13 @@
+# == This file defines the page_layouts for new pages.
+#
+# For further informations please see http://guides.alchemy-cms.com/create_page_layouts.html
+
+- name: standard
+  elements: [company, contact, navbar]
+
+- name: team
+  elements: [person, contact, navbar]
+
+- name: intro
+  unique: true
+  elements: [slide_image, infographic, open_call, contact, location, navbar]
