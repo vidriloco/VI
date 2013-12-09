@@ -2,8 +2,13 @@
 	margin-top: 150px !important;
 }
 
+.filtering {
+	text-align: center;
+}
+
 .company {
 	vertical-align:top;
+	margin-bottom: 80px;
 }
 
 .company .row  {

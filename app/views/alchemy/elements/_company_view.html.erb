@@ -1,5 +1,5 @@
 <%= element_view_for(element) do |el| -%>
-	<div class="row">
+	<div class="company-inner row <%= el.render(:category).downcase %> <%= el.render(:generation) %>">
 		<div class="col-xs-12 col-sm-12 col-lg-6 col-md-8">
 			<div class="info">
 				<div class="contact">

@@ -1,5 +1,13 @@
-<%= render 'shared/navbar' %>
-<div class="two-columns listing">
-	<%= render_elements :only => 'company' %>
+<div id="companies" class="listing">
+	<%= render 'shared/navbar' %>
+
+	<div class="filtering">
+		<%= select_tag 'categories', content_tag(:option,'Categoría',:value=>"0")+options_from_collection_for_select(Company.categories, "identifier", "name")  %>
+		<%= select_tag 'generations',content_tag(:option,'Generación',:value=>"generation-0")+options_from_collection_for_select(Company.generations, "identifier", "name") %>
+	</div>
+
+	<div class="two-columns">
+		<%= render_elements :only => 'company' %>
+	</div>
 </div>
 <%= render 'shared/footer' %>

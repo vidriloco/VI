@@ -101,6 +101,14 @@
     type: EssenceText
   - name: twitter
     type: EssenceText
+  - name: category
+    type: EssenceSelect
+    validate:
+    - presence
+  - name: generation
+    type: EssenceSelect
+    validate:
+    - presence
   - name: image
     type: EssencePicture
     validate:
