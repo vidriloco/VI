@@ -10,4 +10,4 @@
 
 - name: intro
   unique: true
-  elements: [slide_image, infographic, open_call, contact, location, navbar]
+  elements: [slide_image, infographic, open_call, contact, location, navbar, partner]

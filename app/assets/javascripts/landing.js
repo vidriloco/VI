@@ -70,7 +70,10 @@ $(document).ready(function() {
 
 			var mapOptions = {
 				center: myLatlng,
-				zoom: 18
+				zoom: 18,
+				scrollwheel: false,
+				disableDoubleClickZoom: true,
+				streetViewControl: false
 	    };
 
 			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -80,7 +83,12 @@ $(document).ready(function() {
 			    title:"Nuestra ubicación"
 			});
 			marker.setMap(map);
-
+			google.maps.event.addDomListener(window, 'load', initialize);
+			google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map.getCenter();
+			 google.maps.event.trigger(map, "resize");
+			 map.setCenter(center); 
+			});
 /*			google.maps.event.addListener(map, 'click', function() {
 				if(marker==null) {
 					

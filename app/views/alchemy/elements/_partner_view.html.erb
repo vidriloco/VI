@@ -1,0 +1,3 @@
+<%= element_view_for(element, :class => "partner") do |el| -%>
+	<%= link_to el.render(:image), el.render(:link), :alt => el.render(:name), :target => "_blank" %>
+<%- end -%>

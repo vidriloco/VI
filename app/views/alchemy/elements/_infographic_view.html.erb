@@ -1,8 +1,8 @@
 <%= element_view_for(element, :id => 'infographic') do |el| -%>
 	<div class="hidden"><%= el.render :image %></div>
 
-  <div class="content" style="float: <%= el.render :content_floating_in %>; text-align: <%= el.render :content_floating_in %>;">
-    <p style="color: <%= el.render :content_color %>; margin-top: <%= el.render :content_margin_top %>px"><%= el.render :content %></p>
+  <div class="content" style="text-align: <%= el.render :content_justified_to %>; float: <%= el.render :content_floating_in %>; text-align: <%= el.render :content_floating_in %>;">
+    <p style="color: <%= el.render :content_color %>; margin-top: <%= el.render :content_margin_top %>"><%= el.render :content %></p>
 		<% if el.render(:button_visible).eql?("true") %>
 			<br/>
 			<%= link_to el.render(:button_content), el.render(:button_link) , :class => 'action-button', :target => "_blank" %>

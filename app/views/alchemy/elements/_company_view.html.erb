@@ -3,10 +3,18 @@
 		<div class="col-xs-12 col-sm-12 col-lg-6 col-md-8">
 			<div class="info">
 				<div class="contact">
-			  	<p><%= link_to image_tag('twitter.png'), el.render(:twitter), :target => "_blank" %></p>
-			  	<p><%= link_to image_tag('facebook.png'), el.render(:facebook), :target => "_blank" %></p>
-					<p><a href="mailto:<%= el.render(:email) %>"><%= image_tag('email.png') %></a></p>
-			  	<p><%= link_to image_tag('web.png'), complete_url(el.render(:webpage)), :target => "_blank" %></p>
+					<% unless el.render(:twitter).blank? %>
+			  		<p><%= link_to "<i class='icon-twitter'></i>".html_safe, el.render(:twitter), :target => "_blank" %></p>
+					<% end %>
+					<% unless el.render(:facebook).blank? %>
+			  		<p><%= link_to "<i class='icon-facebook'></i>".html_safe, el.render(:facebook), :target => "_blank" %></p>
+					<% end %>
+					<% unless el.render(:email).blank? %>
+						<p><a href="mailto:<%= el.render(:email) %>"><%= "<i class='icon-mail'></i>".html_safe %></a></p>
+					<% end %>
+					<% unless el.render(:webpage).blank? %>
+			  		<p><%= link_to "<i class='icon-globe'></i>".html_safe, complete_url(el.render(:webpage)), :target => "_blank" %></p>
+					<% end %>
 			  </div>
 				<div class="pic"><%= el.render :image, :image_size => '200x200' %></div>
 				<h4><%= el.render :name %></h4>

@@ -17,6 +17,14 @@
     type: EssenceText
   - name: content_color
     type: EssenceText
+- name: partner
+  contents:
+  - name: name
+    type: EssenceText
+  - name: link
+    type: EssenceText
+  - name: image
+    type: EssencePicture
 - name: infographic
   contents:
   - name: content
@@ -24,6 +32,8 @@
   - name: content_color
     type: EssenceText
   - name: content_margin_top
+    type: EssenceText
+  - name: content_justified_to
     type: EssenceText
   - name: content_floating_in
     type: EssenceText

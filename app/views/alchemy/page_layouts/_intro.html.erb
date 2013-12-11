@@ -17,5 +17,13 @@
 <%= render_elements only: 'open_call' %>
 <%= render_elements only: 'location' %>
 
+<div class="partners">
+	<%= render_elements only: 'partner' %>
+</div>
+
+<div class="contact-marker">
+	<div class="right-caret"></div>
+	<%= render_elements only: 'contact' %>
+</div>
 <div id="map"></div>
 <%= render 'shared/footer' %>

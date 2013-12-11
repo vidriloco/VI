@@ -1,3 +1,10 @@
 <%= element_view_for(element) do |el| -%>
-	<span><%= el.render :address %>-<%= el.render :phone %> - <%= mail_to(el.render :email) %></span>
+	<p>
+		<%= el.render :address %>
+		<br/>
+		<%= el.render :phone %> 
+	</p>
+	<p class="contact-email">
+		<%= mail_to el.render(:email), "Contáctanos" %>
+	</p>
 <%- end -%>
