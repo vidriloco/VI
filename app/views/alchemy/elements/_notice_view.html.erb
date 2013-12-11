@@ -1,0 +1,8 @@
+<%= element_view_for(element) do |el| -%>
+	<div class="small"><%= el.render :image, :image_size => '300x300', :crop => true %></div>
+	<div class="large">
+    <p class="name"><%= el.render :title %></p>
+		<p class="date"><%= el.content(:date).ingredient.to_s(:short) %></p>
+		<p class="content"><%= el.render :content %></p>
+  </div>
+<%- end -%>

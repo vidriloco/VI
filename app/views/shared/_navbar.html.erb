@@ -1,6 +1,6 @@
 <div class="navbar">
 	<div class="border">
-		<%= render_elements only: 'navbar' %>
+		<%= render_elements only: 'navbar', from_page: 'intro' %>
 	</div>
 	<div class="menu">
 		<%= link_to image_tag('vi-logo.png', :class => 'logo'), '/home' %>
@@ -9,7 +9,7 @@
 			<li><%= link_to 'Empresas', '/companies' %></li>
 			<li><%= link_to 'Equipo', '/team' %></li>
 			<li><%= link_to 'Plataformas', '' %></li>
-			<li><%= link_to 'Noticias', '' %></li>
+			<li><%= link_to 'Noticias', '/news' %></li>
 		</ul>
 	</div>
 </div>

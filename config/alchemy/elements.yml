@@ -123,6 +123,16 @@
     type: EssencePicture
     validate:
     - presence
+- name: notice
+  contents:
+  - name: title
+    type: EssenceText
+  - name: date
+    type: EssenceDate
+  - name: content
+    type: EssenceRichtext
+  - name: image
+    type: EssencePicture
 - name: person
   contents:
   - name: name

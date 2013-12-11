@@ -1,20 +1,42 @@
-.person {
-	width: 90%;
+.persons {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.person .main {
+.person {
+	vertical-align: top;
 	text-align: center;
 }
 
-.person .main .name {
-	font-size: 16px;
+.person > div {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.person .name {
+	font-size: 14px;
 	margin-top: 10px;
 	margin-bottom: 0px;
 	font-weight: bold;
 }
 
-.person .main .occupation {
+.person .occupation {
 	margin-top: 0px;
 	padding-top: 0px;
-	font-size: 16px !important;
+	font-size: 14px;
+}
+
+.person .small {
+	width: 200px;
+	text-align: center;
+}
+
+.person .large {
+	margin-left: 20px;
+	width: 300px;
+}
+
+.person .description {
+	text-align:justify;
 }

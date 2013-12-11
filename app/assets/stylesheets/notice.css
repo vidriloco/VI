@@ -1,0 +1,32 @@
+.notices {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.notice > div {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.notice .small {
+	width: 40%;
+	text-align: center;
+}
+
+.notice .large {
+	margin-left: 20px;
+	width: 55%;
+}
+
+
+.notice .large .name {
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.notice .large .date {
+	font-size: 15px;
+	margin-top: 0px;
+}

@@ -1,21 +1,15 @@
 <%= element_view_for(element) do |el| -%>
-	<div class="two-columns person">
-		<div class="col-1 main">
-	    <%= el.render :image, :image_size => '200x200', :crop => true %>
-			<p class="name"><%= el.render :name %></p>
-			<p class="occupation"><%= el.render :occupation %></p>
-			
-			<% unless el.render(:linked_in).blank? %>
-				<p class="linked_in"><%= link_to "<i class='icon-linkedin'></i>  #{el.render :name}".html_safe, el.render(:linked_in), :target => "_blank" %></p>
-			<% end %>
-		  <p class="twitter"><%= link_to "<i class='icon-twitter'></i>  @#{el.render :twitter}".html_safe, twitter_url_for(el.render(:twitter)), :target => "_blank" %></p>
-	  </div>
-		<div class="col-1">
-		  <div class="description">
-		    <%= el.render :description %>
-		  </div>
-		</div>
-	  
+	<div class="small">
+    <%= el.render :image, :image_size => '200x200', :crop => true %>
+		<p class="name"><%= el.render :name %></p>
+		<p class="occupation"><%= el.render :occupation %></p>
+		
+		<% unless el.render(:linked_in).blank? %>
+			<p class="linked_in"><%= link_to "<i class='icon-linkedin'></i>  #{el.render :name}".html_safe, el.render(:linked_in), :target => "_blank" %></p>
+		<% end %>
+	  <p class="twitter"><%= link_to "<i class='icon-twitter'></i>  @#{el.render :twitter}".html_safe, twitter_url_for(el.render(:twitter)), :target => "_blank" %></p>
+  </div>
+	<div class="large description">
+	  <%= el.render :description %>
 	</div>
-	
 <%- end -%>
