@@ -6,6 +6,10 @@ class Company
   end
   
   def self.generations
-    (1...20).to_a.map { |item| Generation.new(item) }
+    (1...7).to_a.map { |item| Generation.new(item) }
+  end
+  
+  def self.platforms
+    [String.new, "Transformadora Ciel", "Posible"].map { |item| Platform.new(item) }
   end
 end

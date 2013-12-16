@@ -1,10 +1,20 @@
 .persons {
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
+}
+
+.listing .bordered {
+	width: 40%;
+	float: right;
+	border-top: 8px solid #5B9AD4;
 }
 
 .person {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 50%;
+	min-width: 600px;
+	display: inline-block;
 	vertical-align: top;
 	text-align: center;
 }
@@ -28,13 +38,23 @@
 }
 
 .person .small {
-	width: 200px;
+	width: 35%;
 	text-align: center;
+}
+
+.person .small .details {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.person .small .details .social {
+	text-align: left;
 }
 
 .person .large {
 	margin-left: 20px;
-	width: 300px;
+	width: 45%;
 }
 
 .person .description {

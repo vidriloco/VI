@@ -2,7 +2,7 @@
   <%= el.edit :name %>
   <%= el.edit :category, :select_values => Company.categories.map { |item| item.name } %>
   <%= el.edit :generation, :select_values => Company.generations.map { |item| item.identifier } %>
-
+	<%= el.edit :platform, :select_values => Company.platforms.map { |item| item.identifier } %>
   <%= el.edit :description %>
   <%= el.edit :facebook %>
   <%= el.edit :email %>

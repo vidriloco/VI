@@ -99,6 +99,8 @@
     type: EssenceText
     validate:
     - presence
+  - name: platform
+    type: EssenceSelect
   - name: description
     type: EssenceRichtext
     validate:
@@ -133,6 +135,14 @@
     type: EssenceRichtext
   - name: image
     type: EssencePicture
+- name: platform
+  contents:
+  - name: image
+    type: EssencePicture
+  - name: details
+    type: EssenceRichtext
+  - name: name
+    type: EssenceText
 - name: person
   contents:
   - name: name

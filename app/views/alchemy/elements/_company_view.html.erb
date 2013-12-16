@@ -1,7 +1,7 @@
 <%= element_view_for(element) do |el| -%>
-	<div class="company-inner row <%= el.render(:category).downcase %> <%= el.render(:generation) %>">
-		<div class="col-xs-12 col-sm-12 col-lg-6 col-md-8">
-			<div class="info">
+	<div class="<%= el.render(:category).downcase %> <%= el.render(:platform).downcase %> <%= el.render(:generation) %>">
+		<div class="info">
+			<div>
 				<div class="contact">
 					<% unless el.render(:twitter).blank? %>
 			  		<p><%= link_to "<i class='icon-twitter'></i>".html_safe, el.render(:twitter), :target => "_blank" %></p>
@@ -17,9 +17,9 @@
 					<% end %>
 			  </div>
 				<div class="pic"><%= el.render :image, :image_size => '200x200' %></div>
-				<h4><%= el.render :name %></h4>
+				<div class="title"><%= el.render :name %></div>
 			</div>
 		</div>
-	  <div class="col-xs-12 col-sm-12 col-lg-6 col-md-4 details"><%= el.render :description %></div>
+	  <div class="details"><%= el.render :description %></div>
 	</div>
 <%- end -%>

@@ -4,6 +4,7 @@
 
 - name: standard
   elements: [company, contact, navbar]
+  layoutpage: true
 
 - name: team
   elements: [person, contact, navbar]
@@ -12,6 +13,11 @@
   unique: true
   elements: [slide_image, infographic, open_call, contact, location, navbar, partner]
   layoutpage: true
+  
 - name: news
   unique: true
   elements: [notice]
+  
+- name: platforms
+  unique: true
+  elements: [platform]

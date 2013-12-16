@@ -1,0 +1,16 @@
+<%= element_view_for(element, :class => "platform") do |el| -%>
+	<div id="<%= el.render(:name).downcase.gsub(' ', '_') %>" class="content agrouper">
+	  <div class="image">
+	    <%= el.render :image %>
+	  </div>
+	  <div class="details">
+			<p class="name"><%= el.render :name %></p>
+	    <%= el.render :details %>
+	  </div>
+	</div>
+  <div class="content company-list">
+		<p class="name">Empresas</p>
+		<br/>
+		<%= render_elements :only => 'company', from_page: 'standard' %>
+	</div>
+<%- end -%>

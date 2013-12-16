@@ -1,0 +1,26 @@
+.platforms {
+	margin: 40px;
+	text-align: center;
+}
+
+.platforms .platform .content > div {
+	width: 45%;
+	min-width: 700px;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.platforms .name {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.platforms .platform .content .details {
+	text-align: justify;
+}
+
+.platforms .platform .company-list {
+	border-bottom: 0.5px solid #999;
+	margin-bottom: 50px;
+}

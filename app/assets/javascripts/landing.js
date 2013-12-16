@@ -3,6 +3,12 @@
 $.extend({
 	isDefined: function(dom) {
 		return $(dom).length;
+	},
+	alignCompanies: function() {
+		var companies = $('.companies .company').length;
+		if((companies.length % 2) != 0) {
+			$('.companies').append($($('.companies .company')[0]).clone());
+		}
 	}
 });
 

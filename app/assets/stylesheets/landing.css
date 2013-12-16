@@ -218,6 +218,8 @@ ul li a {
 }
 
 .footer {
+	position: fixed;
+	bottom: 0px;
 	background-color: white;
 	color: #818181;
 	text-transform: none;

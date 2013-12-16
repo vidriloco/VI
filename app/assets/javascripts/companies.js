@@ -33,11 +33,11 @@ $(document).ready(function() {
 		});
 
 		Path.map("#/").to(function() {
-			$('.company-inner').parent('.company').fadeIn();
+			$('.company').fadeIn();
 		});
 
 		Path.map('#/:group_one(/:group_two)').to(function() {
-			$('.company-inner').parent('.company').fadeOut();
+			$('.company').fadeOut();
 			
 			if(this.params['group_two'] != undefined) {
 				$('.'+this.params['group_two']+'.'+this.params['group_one']).parent('.company').fadeIn();

@@ -6,8 +6,8 @@
 		<%= select_tag 'generations',content_tag(:option,'Generación',:value=>"generation-0")+options_from_collection_for_select(Company.generations, "identifier", "name") %>
 	</div>
 
-	<div class="two-columns">
-		<%= render_elements :only => 'company' %>
+	<div class="companies">
+		<%= render_elements :only => 'company' %>		
 	</div>
 </div>
 <%= render 'shared/footer' %>
