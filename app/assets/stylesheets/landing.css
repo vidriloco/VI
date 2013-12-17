@@ -4,6 +4,8 @@
  *= require owl.theme
  */
 
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,300);
+
 html, body {
   height:100%;
   min-height:100%;
@@ -159,18 +161,58 @@ ul li a {
 #open-call {
 	height: 300px !important;
 	width: 100%;
-	text-align: center;
 	padding-top: 70px;
 	padding-bottom: 70px;
+}
+
+#open-call .container {
+	min-width: 400px;
+	width: 50%;
+	text-align: center;
+	float: right;
 }
 
 #open-call .title {
 	font-size: 40px;
 }
 
+.numbers {
+	width: 100%;
+	background-color: rgb(240,240,240);
+	padding: 15px;
+	color: rgb(63, 87, 101);
+	text-align: center;
+}
+
+.numbers .number {
+	width: 45%;
+	min-width: 400px;
+	display: inline-block;
+	margin: 10px 0 10px 0;
+}
+
+.numbers .number p {
+	font-family: 'Merriweather' !important;
+}
+
+.numbers .number .value {
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.numbers .number .words {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
 #map {
 	height: 200px;
 	width: 100%;
+}
+
+.contact .details {
+	text-align: center;
 }
 
 .contact-marker {
@@ -183,6 +225,9 @@ ul li a {
 	background-color: white;
 	border-radius: 2px;
 	padding: 10px;
+	-moz-box-shadow: 0 0 3px #888;
+	-webkit-box-shadow: 0 0 3px#888;
+	box-shadow: 0 0 3px #888;
 }
 
 .contact-marker .right-caret {

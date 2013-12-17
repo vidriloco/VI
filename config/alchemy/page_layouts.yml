@@ -11,7 +11,7 @@
 
 - name: intro
   unique: true
-  elements: [slide_image, infographic, open_call, contact, location, navbar, partner]
+  elements: [slide_image, infographic, open_call, contact, location, navbar, partner, number]
   layoutpage: true
   
 - name: news

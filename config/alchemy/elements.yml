@@ -163,3 +163,9 @@
     type: EssencePicture
     validate:
     - presence
+- name: number
+  contents:
+  - name: value
+    type: EssenceText
+  - name: words
+    type: EssenceText
