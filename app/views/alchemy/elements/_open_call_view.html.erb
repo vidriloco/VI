@@ -6,9 +6,12 @@
 	  <div class="content">
 	    <span style="color: <%= el.render :details_color %>"><%= el.render :details %></span>
 			<br/>
-			<% if el.render(:button_visible).eql?("true") %>
+			<% if el.render(:button_visible_one).eql?("true") %>
 				<br/>
-				<%= link_to el.render(:button_content), el.render(:button_link) , :class => 'action-button', :target => "_blank" %>
+				<%= link_to el.render(:button_content_one), el.render(:button_link_one) , :class => 'action-button', :target => "_blank" %>
+			<% end %>
+			<% if el.render(:button_visible_two).eql?("true") %>
+				<%= link_to el.render(:button_content_two), el.render(:button_link_two) , :class => 'action-button', :target => "_blank" %>
 			<% end %>
 	  </div>
 	</div>

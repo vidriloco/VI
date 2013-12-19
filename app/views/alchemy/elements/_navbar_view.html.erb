@@ -13,7 +13,7 @@
 			<li><%= link_to "<i class='icon-twitter'></i>".html_safe, el.render(:twitter), :target => "_blank" %></li>
 		<% end %>
 		<% unless el.render(:email).blank? %>
-			<li><%= link_to "<i class='icon-mail'></i>".html_safe, el.render(:email) %></li>
+			<li><%= mail_to el.render(:email), "<i class='icon-mail'></i>".html_safe %></li>
 		<% end %>
 	</ul>
 <%- end -%>

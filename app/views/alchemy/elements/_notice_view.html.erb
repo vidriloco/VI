@@ -1,5 +1,5 @@
-<%= element_view_for(element) do |el| -%>
-	<div class="small"><%= el.render :image, :image_size => '300x300', :crop => true %></div>
+<%= element_view_for(element, :class => 'notice') do |el| -%>
+	<div class="small"><%= el.render :image %></div>
 	<div class="large">
     <p class="name"><%= el.render :title %></p>
 		<p class="date"><%= distance_of_time_in_words(el.content(:date).ingredient, DateTime.now) %></p>

@@ -5,12 +5,7 @@
 	<div class="menu">
 		<%= link_to image_tag('vi-logo.png', :class => 'logo'), '/home' %>
 		<ul>
-			<li><%= link_to 'Educación', nil %></li>
-			<li><%= link_to 'Empresas', '/companies' %></li>
-			<li><%= link_to 'Equipo', '/team' %></li>
-			
-			<li><%= link_to 'Programas Corporativos', '/platforms' %></li>
-			<li><%= link_to 'Noticias', '/news' %></li>
+			<%= render_elements only: 'menu', from_page: 'intro' %>
 		</ul>
 	</div>
 </div>

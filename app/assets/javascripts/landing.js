@@ -115,7 +115,7 @@ $(document).ready(function() {
 	}
 
 	$(window).resize(function() {
-		$('#slides-indicators').css({ top: $('.owl-item img').innerHeight()+50 });
+		$('#slides-indicators').css({ top: $('.owl-item img').innerHeight()-50 });
 	});
 	$(window).trigger('resize');
 });

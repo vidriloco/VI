@@ -4,7 +4,7 @@
 		<br/>
 		<%= el.render :phone %> 
 	</p>
-	<p class="contact-email">
-		<%= mail_to el.render(:email), "Contáctanos" %>
+	<p class="centered">
+		<%= mail_to(el.render(:email), "Contáctanos", :class => 'action-button') %>
 	</p>
 <%- end -%>

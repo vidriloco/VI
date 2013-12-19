@@ -17,6 +17,12 @@
     type: EssenceText
   - name: content_color
     type: EssenceText
+- name: menu
+  contents:
+  - name: title
+    type: EssenceText
+  - name: suburl
+    type: EssenceText
 - name: partner
   contents:
   - name: name
@@ -55,11 +61,17 @@
     type: EssenceText
   - name: details_color
     type: EssenceText
-  - name: button_visible
+  - name: button_visible_one
     type: EssenceBoolean
-  - name: button_link
+  - name: button_link_one
     type: EssenceText
-  - name: button_content
+  - name: button_content_one
+    type: EssenceText
+  - name: button_visible_two
+    type: EssenceBoolean
+  - name: button_link_two
+    type: EssenceText
+  - name: button_content_two
     type: EssenceText
   - name: image
     type: EssencePicture

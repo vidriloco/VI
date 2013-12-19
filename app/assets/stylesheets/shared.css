@@ -5,6 +5,7 @@
 .action-button:hover {
 	text-decoration: none;
 	color: white;
+	background-color: #2FB4E9;
 }
 
 .action-button {
@@ -16,10 +17,22 @@
 	text-shadow: 1px 1px 1px #424242;
 	padding: 8px 30px;
 	border-radius: 2px;
-	background-color: #4B7EC9;
+	background-color: #2C99E9;
 	
 }
 
-.action-button:hover {
-	background-color: rgb(116, 162, 210);
+.centered {
+	text-align: center;
+}
+
+.select-custom {
+  display: inline-block;
+  padding: 4px 3px 3px 5px;
+  margin: 0;
+  font: inherit;
+  outline:none; /* remove focus ring from Webkit */
+  line-height: 1.2;
+  background: none;
+  color:black;
+  border: 1px solid #999;
 }

@@ -1,0 +1,3 @@
+<%= element_view_for(element, :tag => 'li', :class => nil) do |el| -%>
+	<%= link_to el.render(:title), el.render(:suburl) %>
+<%- end -%>

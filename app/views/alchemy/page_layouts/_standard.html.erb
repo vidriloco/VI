@@ -2,8 +2,8 @@
 	<%= render 'shared/navbar' %>
 
 	<div class="filtering">
-		<%= select_tag 'categories', content_tag(:option,'Categoría',:value=>"0")+options_from_collection_for_select(Company.categories, "identifier", "name")  %>
-		<%= select_tag 'generations',content_tag(:option,'Generación',:value=>"generation-0")+options_from_collection_for_select(Company.generations, "identifier", "name") %>
+		<%= select_tag 'categories', content_tag(:option,'Categoría',:value=>"0")+options_from_collection_for_select(Company.categories, "identifier", "name"), :class => 'select-custom'  %>
+		<%= select_tag 'generations', content_tag(:option,'Generación',:value=>"generation-0")+options_from_collection_for_select(Company.generations, "identifier", "name"), :class => 'select-custom'  %>
 	</div>
 
 	<div class="companies">
