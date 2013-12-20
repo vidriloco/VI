@@ -2,7 +2,7 @@
 
 class Company
   def self.categories
-    ["Salud", "Movilidad", "Finanzas", "Comercio Electrónico"].map { |item| Category.new(item) }
+    ["Movilidad", "Servicios Financieros", "Servicios de Salud", "Big Data", "E-Commerce", "Educación", "Tecnología aplicada a servicios"].map { |item| Category.new(item) }
   end
   
   def self.generations
