@@ -1,0 +1,21 @@
+<%= element_view_for(element, :class => "accelerator") do |el| -%>
+	<div id="<%= el.render(:name).downcase.gsub(' ', '_') %>" class="content agrouper">
+		<% if el.render(:image_appears_on_right) == "true" %>
+	  	<div class="image">
+		    <%= el.render :image %>
+		  </div>
+		  <div class="details">
+				<p class="name"><%= el.render :name %></p>
+		    <%= el.render :details %>
+		  </div>
+		<% else %>
+			<div class="details">
+				<p class="name"><%= el.render :name %></p>
+		    <%= el.render :details %>
+		  </div>
+			<div class="image">
+		    <%= el.render :image %>
+		  </div>
+		<% end %>
+	</div>
+<%- end -%>

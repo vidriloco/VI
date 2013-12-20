@@ -155,6 +155,16 @@
     type: EssenceRichtext
   - name: name
     type: EssenceText
+- name: accelerator
+  contents:
+  - name: image
+    type: EssencePicture
+  - name: details
+    type: EssenceRichtext
+  - name: name
+    type: EssenceText
+  - name: image_appears_on_right
+    type: EssenceBoolean
 - name: person
   contents:
   - name: name

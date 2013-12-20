@@ -21,3 +21,7 @@
 - name: platforms
   unique: true
   elements: [platform]
+  
+- name: accelerator
+  unique: true
+  elements: [accelerator]
