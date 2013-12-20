@@ -79,8 +79,6 @@
 	vertical-align: middle;
 }
 
-
-
 .two-columns {
 	-moz-column-count: 2;
 	-moz-column-gap: 10px;
@@ -92,16 +90,4 @@
 	column-gap: 10px;
 	column-rule: none;
 	margin-top: 50px;
-}
-
-@media (min-width: @screen-sm-min) {
-
-}
-
-@media (min-width: @screen-md-min) {
-	
-}
-
-@media (min-width: @screen-lg-min) {
-	
 }

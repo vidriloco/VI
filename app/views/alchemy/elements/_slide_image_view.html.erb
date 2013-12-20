@@ -1,6 +1,6 @@
 <%= element_view_for(element, :id => @slide) do |el| -%>
 	<%= el.render :image, :class => "image" %>
-	<div class="inner-item">
+	<div class="inner-item" style="<%= el.render :box_margin %>">
 		<p style="color: <%= el.render :content_color %>"><%= el.render :details %></p>
 		<% if el.render(:button_visible).eql?("true") %>
 			<br/>

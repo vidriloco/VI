@@ -34,6 +34,8 @@ module Vi
     config.i18n.default_locale = :en
     config.i18n.locale = :en
     
+    config.assets.precompile += ['vi-logo.png', 'next_icon.png', 'prev_icon.png', 'blue-dot.png', 'grey-dot.png']
+    
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"

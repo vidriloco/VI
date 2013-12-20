@@ -17,6 +17,8 @@
     type: EssenceText
   - name: content_color
     type: EssenceText
+  - name: box_margin
+    type: EssenceText
 - name: menu
   contents:
   - name: title
