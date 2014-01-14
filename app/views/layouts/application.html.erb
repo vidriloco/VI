@@ -5,6 +5,11 @@
   <%= stylesheet_link_tag 'application' %>
 	<%= javascript_include_tag 'application' %>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	
+	<%= favicon_link_tag '/assets/favicon.ico' %>
+	<%= favicon_link_tag '/assets/favicon-144.png', :size => '144x144', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+	<%= favicon_link_tag '/assets/favicon-72.png', :size => '72x72', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+	<%= favicon_link_tag '/assets/favicon.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
 </head>
 <body>
   <%= yield %>

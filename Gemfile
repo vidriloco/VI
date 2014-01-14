@@ -6,9 +6,10 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'pg'
 
-gem 'alchemy_cms', github: 'magiclabs/alchemy_cms', branch: '2.7-stable'
+gem 'alchemy_cms'
+gem 'execjs'
+gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.

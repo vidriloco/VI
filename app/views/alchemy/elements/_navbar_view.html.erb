@@ -1,7 +1,11 @@
 <%= element_view_for(element) do |el| -%>
-	<ul>
-		<li><%= link_to el.render(:first_item_text), el.render(:first_item_url), :target => "_blank" %></li>
+	<% unless el.render(:centered_text).blank? %>
+		<p class="main-text"><%= el.render(:centered_text) %></p>
+	<% end %>
+	<ul class="pleca-menu">
+		<li class="text"><%= link_to el.render(:first_item_text), el.render(:first_item_url), :target => "_blank" %></li>
 		<li class="text"><%= link_to el.render(:second_item_text), el.render(:second_item_url), :target => "_blank" %></li>
+		<li class="text"><%= link_to el.render(:third_item_text), el.render(:third_item_url), :target => "_blank" %></li>
 		
 		<% unless el.render(:linked_in).blank? %>
 			<li><%= link_to "<i class='icon-linkedin'></i>".html_safe, el.render(:linked_in), :target => "_blank" %></li>

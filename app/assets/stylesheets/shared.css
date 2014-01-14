@@ -31,7 +31,21 @@
   font: inherit;
   outline:none; /* remove focus ring from Webkit */
   line-height: 1.2;
-  background: none;
   color:black;
-  border: 1px solid #999;
+  border: 1px solid #2FB4E9;
+	-webkit-appearance:none; 
+	border-radius: 0px !important;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: "";
+	background: url('dropdown.png') no-repeat; 
+	background-position: 95% 8px;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.select-custom {
+		background-position: 95% 4px !important;
+		width: 120px;
+	}
+}
+

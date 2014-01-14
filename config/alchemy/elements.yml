@@ -101,6 +101,12 @@
     type: EssenceText
   - name: second_item_url
     type: EssenceText
+  - name: third_item_text
+    type: EssenceText
+  - name: third_item_url
+    type: EssenceText    
+  - name: centered_text
+    type: EssenceText
 - name: contact
   contents:
   - name: address

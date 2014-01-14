@@ -56,6 +56,13 @@ html, body {
 	background-color: rgba(255,255,255,0.9);
 }
 
+.pleca-menu {
+	width: 500px;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}
+
 ul {
 	margin: 0px 20px 0px 0px;
 	padding: 0px;
@@ -70,6 +77,14 @@ ul li {
 
 ul li a {
 	text-decoration: none;
+}
+
+.main-text {
+	text-align: center;
+	color: white;
+	font-style: italic;
+	font-size: 13px;
+	vertical-align: bottom;
 }
 
 .navbar {

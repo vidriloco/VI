@@ -5,23 +5,29 @@
 - name: standard
   elements: [company, contact, navbar]
   layoutpage: true
+  cache: false
 
 - name: team
   elements: [person, contact, navbar]
+  cache: false
 
 - name: intro
   unique: true
   elements: [slide_image, infographic, open_call, contact, location, navbar, partner, number, menu]
   layoutpage: true
+  cache: false
   
 - name: news
   unique: true
   elements: [notice]
+  cache: false
   
 - name: platforms
   unique: true
   elements: [platform]
+  cache: false
   
 - name: accelerator
   unique: true
   elements: [accelerator]
+  cache: false
