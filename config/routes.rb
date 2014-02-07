@@ -1,4 +1,8 @@
 Vi::Application.routes.draw do
+  devise_for :users
+
+  mount RailsAdmin::Engine => '/venture', :as => 'rails_admin'
+
   mount Alchemy::Engine => '/'
 
   # The priority is based upon order of creation:

@@ -1,0 +1,5 @@
+<%= element_view_for(element, :class => "video") do |el| -%>
+  <%= el.render :content %>
+	<div class="container"></div>
+  <div class="url" data-url="<%= el.render(:link_to_media) %>"></div>
+<%- end -%>

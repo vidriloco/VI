@@ -1,0 +1,16 @@
+<%= element_view_for(element, :id => 'shadowbox') do |el| -%>
+  <div class="content hidden">
+		<div class="shadowbox">
+			<p class="title">
+		    <%= el.render :title %>
+		  </p>
+		  <p class="content">
+		    <%= el.render :content %>
+		  </p>
+			<div class="links">
+				<%= link_to el.render(:left_link_url), el.render(:left_link_text) , :class => 'action-button', :target => "_blank" %>
+				<%= link_to el.render(:right_link_url), el.render(:right_link_text) , :class => 'action-button', :target => "_blank" %>
+			</div>
+		</div>
+	</div>
+<%- end -%>

@@ -1,11 +1,7 @@
 #encoding: utf-8
 
-class Generation
-  attr_accessor :number
-  
-  def initialize(number)
-    self.number = number
-  end
+class Generation < ActiveRecord::Base
+  attr_accessible :number
   
   def name
     "Generación #{number}"

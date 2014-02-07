@@ -13,7 +13,7 @@
 
 - name: intro
   unique: true
-  elements: [slide_image, infographic, open_call, contact, location, navbar, partner, number, menu]
+  elements: [slide_image, infographic, open_call, contact, location, navbar, partner, number, menu, quotation, video, plain_image, shadowbox, quote_title]
   layoutpage: true
   cache: false
   
@@ -30,4 +30,9 @@
 - name: accelerator
   unique: true
   elements: [accelerator]
+  cache: false
+  
+- name: whitepage
+  unique: true
+  elements: [rich_text]
   cache: false

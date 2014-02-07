@@ -1,11 +1,5 @@
-#encoding: utf-8
-
-class Category
-  attr_accessor :name
-  
-  def initialize(name)
-    self.name = name
-  end
+class Category < ActiveRecord::Base
+  attr_accessible :name
   
   def identifier
     name.downcase.gsub(' ', '_')

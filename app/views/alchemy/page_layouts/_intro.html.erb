@@ -1,35 +1,49 @@
 <%= render 'shared/navbar' %>
 
-<div id="slides-container">
-	<% @slide = 0 %>
-	<%= render_elements only: 'slide_image' %>
-</div>
+<% Ordering.all.sort! { |a,b| a.position <=> b.position }.each do |ordering| %>
+	<% if ordering.identifier.eql?('slide_image') %>
+		<div id="slides-container">
+			<% @slide = 0 %>
+			<%= render_elements only: 'slide_image' %>
+		</div>
 
-<div id="slides-indicators">
-	<ul>
-		<li id="prev-control"><%= link_to image_tag('prev_icon.png'), 'javascript:void(0);', :class => 'prev-icon' %></li>
-		<li id="circle"><%= link_to '', 'javascript:void(0);', :class => 'circle gray-circle' %></li>
-		<li id="next-control"><%= link_to image_tag('next_icon.png'), 'javascript:void(0);', :class => 'next-icon' %></li>
-	</ul>
-</div>
+		<div id="slides-indicators">
+			<ul>
+				<li id="prev-control"><%= link_to image_tag('prev_icon.png'), 'javascript:void(0);', :class => 'prev-icon' %></li>
+				<li id="circle"><%= link_to '', 'javascript:void(0);', :class => 'circle gray-circle' %></li>
+				<li id="next-control"><%= link_to image_tag('next_icon.png'), 'javascript:void(0);', :class => 'next-icon' %></li>
+			</ul>
+		</div>
+	<% elsif ordering.identifier.eql?('number') %>
+		<div class="numbers">
+			<%= render_elements only: 'number' %>
+		</div>
+	<% elsif ordering.identifier.eql?('quotation') %>
+		<%= render_elements only: 'quote_title' %>
+		<div id="quotations-container">
+			<% @quotation = 0 %>
+			<%= render_elements only: 'quotation' %>
+		</div>
+		<div id="quotations-indicators">
+			<ul>
+				<li id="prev-control"><%= link_to image_tag('prev_icon.png'), 'javascript:void(0);', :class => 'prev-icon' %></li>
+				<li id="circle"><%= link_to '', 'javascript:void(0);', :class => 'circle gray-circle' %></li>
+				<li id="next-control"><%= link_to image_tag('next_icon.png'), 'javascript:void(0);', :class => 'next-icon' %></li>
+			</ul>
+		</div>
+	<% elsif ordering.identifier.eql?('partner') %>
+		<div class="partners">
+			<%= render_elements only: 'partner' %>
+		</div>
+	<% elsif ordering.identifier.eql?('contact') %>
+		<div class="contact-marker">
+			<div class="right-caret"></div>
+			<%= render_elements only: 'contact' %>
+		</div>
+	<% else %>
+		<%= render_elements only: ordering.identifier %>
+	<% end %>
+<% end %>
 
-<%= render_elements only: 'infographic' %>
-
-<div class="numbers">
-	<%= render_elements only: 'number' %>
-</div>
-
-<%= render_elements only: 'open_call' %>
-
-<%= render_elements only: 'location' %>
-
-<div class="partners">
-	<%= render_elements only: 'partner' %>
-</div>
-
-<div class="contact-marker">
-	<div class="right-caret"></div>
-	<%= render_elements only: 'contact' %>
-</div>
 <div id="map"></div>
 <%= render 'shared/footer' %>

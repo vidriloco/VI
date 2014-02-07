@@ -1,6 +1,24 @@
 # == In this configuration you setup Alchemy´s element layouts.
 #
 # For further informations please see http://guides.alchemy-cms.com/create_elements.html
+- name: accelerator
+  contents:
+  - name: image
+    type: EssencePicture
+  - name: details
+    type: EssenceRichtext
+  - name: name
+    type: EssenceText
+  - name: image_appears_on_right
+    type: EssenceBoolean
+- name: platform
+  contents:
+  - name: image
+    type: EssencePicture
+  - name: details
+    type: EssenceRichtext
+  - name: name
+    type: EssenceText
 - name: slide_image
   contents:
   - name: details
@@ -65,18 +83,20 @@
     type: EssenceText
   - name: button_visible_one
     type: EssenceBoolean
+  - name: button_visible_two
+    type: EssenceBoolean
   - name: button_link_one
     type: EssenceText
   - name: button_content_one
     type: EssenceText
-  - name: button_visible_two
-    type: EssenceBoolean
   - name: button_link_two
     type: EssenceText
   - name: button_content_two
     type: EssenceText
   - name: image
     type: EssencePicture
+  - name: details_color
+    type: EssenceText
 - name: location
   contents:
   - name: latitude
@@ -104,7 +124,7 @@
   - name: third_item_text
     type: EssenceText
   - name: third_item_url
-    type: EssenceText    
+    type: EssenceText
   - name: centered_text
     type: EssenceText
 - name: contact
@@ -119,8 +139,6 @@
     type: EssenceText
     validate:
     - presence
-  - name: platform
-    type: EssenceSelect
   - name: description
     type: EssenceRichtext
     validate:
@@ -155,24 +173,6 @@
     type: EssenceRichtext
   - name: image
     type: EssencePicture
-- name: platform
-  contents:
-  - name: image
-    type: EssencePicture
-  - name: details
-    type: EssenceRichtext
-  - name: name
-    type: EssenceText
-- name: accelerator
-  contents:
-  - name: image
-    type: EssencePicture
-  - name: details
-    type: EssenceRichtext
-  - name: name
-    type: EssenceText
-  - name: image_appears_on_right
-    type: EssenceBoolean
 - name: person
   contents:
   - name: name
@@ -193,9 +193,49 @@
     type: EssencePicture
     validate:
     - presence
+- name: quotation
+  contents:
+  - name: content
+    type: EssenceRichtext
+  - name: author
+    type: EssenceText
+  - name: charge
+    type: EssenceText
+- name: video
+  contents:
+  - name: content
+    type: EssenceRichtext
+  - name: link_to_media
+    type: EssenceText
+- name: plain_image
+  contents:
+  - name: image
+    type: EssencePicture
+- name: rich_text
+  contents:
+  - name: content
+    type: EssenceRichtext
+- name: shadowbox
+  contents:
+  - name: title
+    type: EssenceText
+  - name: content
+    type: EssenceText
+  - name: left_link_text
+    type: EssenceText
+  - name: right_link_text
+    type: EssenceText
+  - name: left_link_url
+    type: EssenceText
+  - name: right_link_url
+    type: EssenceText
 - name: number
   contents:
   - name: value
     type: EssenceText
   - name: words
     type: EssenceText
+- name: quote_title
+  contents:
+  - name: title
+    type: EssenceRichtext

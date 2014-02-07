@@ -1,5 +1,5 @@
 <%= element_view_for(element) do |el| -%>
-	<div class="<%= el.render(:category).downcase.gsub!(' ', '_') %> <%= el.render(:platform).downcase %> <%= el.render(:generation) %>">
+	<div class="<%= el.render(:category).downcase.gsub(' ', '_') %> <%= el.render(:platform).downcase %> <%= el.render(:generation) %>">
 		<div class="info">
 			<div>
 				<div class="contact">

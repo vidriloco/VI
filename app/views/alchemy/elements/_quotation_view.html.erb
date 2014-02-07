@@ -1,0 +1,8 @@
+<%= element_view_for(element, :class => "quotation") do |el| -%>
+	<div class="half-left"><p><%= el.render :content %></p></div>
+	<div class="half-right">
+		<p class="author"><%= el.render :author %></p>
+		<p class="charge"><%= el.render :charge %></p>
+	</div>
+<%- end -%>
+<% @quotation+=1 %>
